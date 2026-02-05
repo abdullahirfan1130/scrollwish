@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hiiiii Kimmmmyyyy — Happyyyy 18th Birthday 💙</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="bg">
+    <div class="bg-layer layer1"></div>
+    <div class="bg-layer layer2"></div>
+    <div class="bg-layer layer3"></div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <main class="site">
+    <header class="topbar">
+      <div class="brand">Hiiiii Kimmmmyyyy💙 MY PRETTY LITTLE BABY</div>
+      <div class="controls">
+        <button id="play-music" class="btn">Play Music ▶️</button>
+        <button id="mute-toggle" class="btn ghost" title="Mute/Unmute">🔈</button>
+      </div>
+    </header>
+
+    <!-- Scroll container -->
+    <div id="content">
+      <!-- Section 1 - Hero -->
+      <section class="section hero" id="sec-1">
+        <div class="hero-inner">
+          <div class="left">
+            <h1 class="big">Hiiiii Kimmmmyyyy........</h1>
+            <h2 class="subtitle">Happyyyy 18th Birthday 🎉</h2>
+            <p class="lead">Today we celebrate you — 18 glowing years of laughters, sketches, cookies, puppies and late-night games. Scroll to open tiny surprises.</p>
+            <div class="actions">
+              <button class="btn glow" id="open-letter">Open Letter</button>
+              <button class="btn" id="celebrate-btn">Celebrate 🎊</button>
+            </div>
+            <div class="note">Tip: Move your mouse to make butterflies follow the cursor ✨</div>
+          </div>
+          <div class="right">
+            <div class="cake-wrap" aria-hidden="true">
+              <!-- Simple CSS 3D-looking rotating cake -->
+              <div class="cake">
+                <div class="cake-layer layer-bottom"></div>
+                <div class="cake-layer layer-mid"></div>
+                <div class="cake-layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="candles">
+                  <div class="candle" style="--i:0"></div>
+                  <div class="candle" style="--i:1"></div>
+                  <div class="candle" style="--i:2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="puppy-frame">
+              <img src="assets/delilah.jpg" alt="Delilah" />
+              <div class="caption">Delilah sends tail-wags 🐾</div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint">Scroll ↓</div>
+      </section>
+
+      <!-- Section 2 - Story intro -->
+      <section class="section" id="sec-2">
+        <div class="card">
+          <h3>Today is special… because YOU are.</h3>
+          <p class="muted">A soft story made of cookies, sketches, games and puppy cuddles — just for you.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 - You are art -->
+      <section class="section" id="sec-3">
+        <div class="card">
+          <h3>You are Art</h3>
+          <p>Lines you draw become stories. Keep sketching — your lines make the world brighter. You are an artist in every way.</p>
+          <div class="sketch-blob">✏️ ✨</div>
+        </div>
+      </section>
+
+      <!-- Section 4 - Cookies -->
+      <section class="section" id="sec-4">
+        <div class="card">
+          <h3>Cookies & Comfort</h3>
+          <p>May your days be warm like fresh cookies. Tap a cookie to collect one.</p>
+          <div class="cookie-row">
+            <button class="cookie" aria-label="cookie">🍪</button>
+            <button class="cookie">🍪</button>
+            <button class="cookie">🍪</button>
+          </div>
+          <div class="cookie-count">Collected: <span id="cookie-count">0</span></div>
+        </div>
+      </section>
+
+      <!-- Section 5 - Delilah -->
+      <section class="section" id="sec-5">
+        <div class="card">
+          <h3>Delilah — The Best Pup</h3>
+          <div class="dog-large">
+            <img src="assets/delilah.jpg" alt="Delilah large"/>
+            <div class="dog-glow"></div>
+          </div>
+          <p class="muted">Tail wags, warm naps and cookies stolen. Delilah approves this surprise.</p>
+        </div>
+      </section>
+
+      <!-- Section 6 - Games -->
+      <section class="section" id="sec-6">
+        <div class="card">
+          <h3>Level Up — Games & Laughter</h3>
+          <p>From late-night matches to victory dances — keep leveling up. You are such a pro player babe.</p>
+          <div class="mini-game">
+            <button id="game-start" class="btn small">Start Mini Game</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7 - Wishes -->
+      <section class="section" id="sec-7">
+        <div class="card">
+          <h3>My Wish For You</h3>
+          <p class="muted">I WISH YOU A HAPPY 18TH BIRTHDAY, KIMMY 💙 OR I SAY MY LOVE, I WISH YOU A NICE AND BEAUTIFUL YEAR AHEAD!, I WISH YOU A YEAR FULL OF JOY, LOVE, AND SUCCESS!</p>
+        </div>
+      </section>
+
+      <!-- Section 8 - Animated Letter -->
+      <section class="section" id="sec-8">
+        <div class="card letter-card">
+          <h3>Letter</h3>
+          <div id="letter" class="typewriter"></div>
+          <div class="letter-actions">
+            <button id="download-note" class="btn small">Download Note</button>
+        </div>
+      </section>
+
+      <!-- Section 9 - Finale -->
+      <section class="section final" id="sec-9">
+        <div class="card finale">
+          <h2>Happy 18th Birthday, Kimmy 💙</h2>
+          <p class="muted">Made with love — Abdullah + Delilah</p>
+          <div class="final-actions">
+            <button id="replay" class="btn accent">Replay Story</button>
+            <button id="share-instructions" class="btn ghost">How to Send</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">Open offline — send the folder or the ZIP. Works on desktop & mobile.</footer>
+  </main>
+
+  <!-- local audio -->
+  <audio id="bg-audio" src="assets/music.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
